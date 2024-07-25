@@ -11,7 +11,7 @@
 <meta name="author" content="OCSC" />
 <meta name="robots" content="noarchive, nofollow, noimageindex, noindex, nosnippet" />
 <meta name="viewport" charset="UTF-8" content="width=device-width, initial-scale=1.0">
-<title>ระบบนี้ปิดการให้บริการแล้ว / This service is closed.</title>
+<title></title>
 </head>
 <body><!-- |
 ........................................................................
@@ -33,21 +33,19 @@
 ....OOOOOOOOOOOOO......CCCCCCCCCCCC....SSSSSSSSSSSS.....CCCCCCCCCCCCC...
 .....OOOOOOOOOO.........CCCCCCCCCC......SSSSSSSSSS.......CCCCCCCCCC.....
 ........................................................................
-|--><h1 style="text-align:center;">ขออภัยในความไม่สะดวก</h1>
-<h2 id="website_hostname" align="center" style="display:block; margin-left:auto; margin-right:auto; width:75%;">&nbsp;</h2>
-<p align="center" style="display:block; margin-left:auto; margin-right:auto; width:75%;">เนื่องจากระบบนี้ปิดการให้บริการแล้ว</p>
+|-->
+<h2 id="system_name" align="center" style="display:block; margin-left:auto; margin-right:auto; width:75%;">&nbsp;</h2>
 <p align="center" style="display:block; margin-left:auto; margin-right:auto; width:75%;"><nobr>สำนักงาน ก.พ.</nobr> ต้องขออภัยในความไม่สะดวกเป็นอย่างสูง</p>
-<p align="center" style="display:block; margin-left:auto; margin-right:auto; width:75%;">Sorry for the inconvenience.<br />This service is closed.</p>
-<p align="center" style="display:block; margin-left:auto; margin-right:auto; width:75%;"><hr /></p>
 <p id="main_web_url" align="center" style="display:block; margin-left:auto; margin-right:auto; width:75%;">&nbsp;</p>
 <img src="https://lh3.googleusercontent.com/pw/AJFCJaXetwKDP189oEZ-dMRtsvA1htyVxFgP8o4knZy14zDL3W7JyvP2O_jku7WDXnkXtzvzxlGtCYxWAoq2Atz74-hDWN90yyyTrcNe-nAd5w9N5uqetNPOTTblJV38-hXU_kt-dN-6LyXlRR816W-_lfwwOA=w345-h828-s-no?authuser=0" style="display:block; margin-left:auto; margin-right:auto; width:200px;">
 <script type="text/javascript">
-      let hostname = location.hostname;
-	  let mainweburl = '<a href="https://www.ocsc.go.th/"><nobr>เว็บไซต์สำนักงาน ก.พ.</nobr> / OCSC website</a>';
-      document.getElementById("website_hostname").innerHTML = hostname;
-	  document.getElementById("main_web_url").innerHTML = mainweburl;
-      document.title = hostname;
-	  
+	let system_name = location.hostname;
+    let title_default = 'ระบบนี้ปิดการให้บริการแล้ว / This service is closed.';
+		document.title = title_default;
+	let mainweburl = '<a href="https://search.ocsc.go.th/"><nobr>ค้นหาข้อมูลอื่น ๆ</nobr> <nobr>ของสำนักงาน ก.พ.</nobr></a>';
+	    document.getElementById("main_web_url").innerHTML = mainweburl;	
+    if (system_name) { document.title = system_name; } else { system_name = 'This service is closed.'; }
+        document.getElementById("system_name").innerHTML = system_name;
 </script>
 </body>
 </html>
