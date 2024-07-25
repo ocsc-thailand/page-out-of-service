@@ -35,17 +35,18 @@
 ........................................................................
 |-->
 <h2 id="system_name" align="center" style="display:block; margin-left:auto; margin-right:auto; width:75%;">&nbsp;</h2>
+<p align="center" style="display:block; margin-left:auto; margin-right:auto; width:75%;">ระบบนี้ปิดการให้บริการแล้ว / This service is closed.</p>
 <p align="center" style="display:block; margin-left:auto; margin-right:auto; width:75%;"><nobr>สำนักงาน ก.พ.</nobr> ต้องขออภัยในความไม่สะดวกเป็นอย่างสูง</p>
 <p id="main_web_url" align="center" style="display:block; margin-left:auto; margin-right:auto; width:75%;">&nbsp;</p>
 <img src="https://lh3.googleusercontent.com/pw/AJFCJaXetwKDP189oEZ-dMRtsvA1htyVxFgP8o4knZy14zDL3W7JyvP2O_jku7WDXnkXtzvzxlGtCYxWAoq2Atz74-hDWN90yyyTrcNe-nAd5w9N5uqetNPOTTblJV38-hXU_kt-dN-6LyXlRR816W-_lfwwOA=w345-h828-s-no?authuser=0" style="display:block; margin-left:auto; margin-right:auto; width:200px;">
 <script type="text/javascript">
 	let system_name = location.hostname;
-    let title_default = 'ระบบนี้ปิดการให้บริการแล้ว / This service is closed.';
+	let title_default = 'ระบบนี้ปิดการให้บริการแล้ว / This service is closed.';
 		document.title = title_default;
 	let mainweburl = '<a href="https://search.ocsc.go.th/"><nobr>ค้นหาข้อมูลอื่น ๆ</nobr> <nobr>ของสำนักงาน ก.พ.</nobr></a>';
-	    document.getElementById("main_web_url").innerHTML = mainweburl;	
-    if (system_name) { document.title = system_name; } else { system_name = 'This service is closed.'; }
-        document.getElementById("system_name").innerHTML = system_name;
+		document.getElementById("main_web_url").innerHTML = mainweburl;	
+	if (system_name) { document.title = system_name; } else { system_name = 'This service is closed.'; }
+        	document.getElementById("system_name").innerHTML = system_name;
 </script>
 </body>
 </html>
